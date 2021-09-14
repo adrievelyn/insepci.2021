@@ -20,8 +20,8 @@
 	--black: #000000;
 	--green: #42E2B8;
 	--white: #ffffff;
-	--gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #FDC830 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #F37335 0%, #000000 100%);
-	--gradient2: radial-gradient(10.48% 11.48% at 2.38% 20.52%, #1FA2FF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(85deg, #12D8FA 0%, #A6FFCB 85%);
+	--gradient: radial-gradient(41.48% 100.48% at 2.38% 8.52%, #FDC830 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #F37335 0%, #000000 100%);
+	--gradient2: radial-gradient(41.48% 200.48% at 2.38% 8.52%, #000000 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #FDC830 0%, #F37335 100%);
 	
 }
 
@@ -40,16 +40,22 @@ body{
 	
 }
 
-.logo{
+.logo, .logo2, .logo3, .logo4{
 	background:var(--black);
 	width: 100%;
 	height: 150px;
 }
-.logo-img{
+.logo-img, .logo-img2, .logo-img3, .logo-img4{
 	height: 150px;
+	
+}
+.logo2, .logo3, .logo4{
+	margin-top: 30px;
+	background: var(--gradient);
+}
+.logo-img, .logo-img3, .logo-img4{
 	margin-left: 20px;
 }
-.logo-img2{
-	height: 150px;
-	margin-left: 20px;
+.logo4{
+	background: var(--gradient2);
 }
