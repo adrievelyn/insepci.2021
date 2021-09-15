@@ -8,24 +8,49 @@ import Logo3 from './../images/logoInsepci.png';
 class Home extends React.Component{
     render(){
         return(
+            <nav>
             <div>
-            <div className='logo' >
-                <img className='logo-img' src={Logo}></img>
-            </div>
+                <div className='banner' >
+                    <img className='banner__logo-img' src={Logo}></img>
+                    
+                        <a href="#1">Nosotros</a>
+                        <a href="#2">Servicios</a>
+                        <a href="#3">Cursos</a>    
+                        <a href="#2">Productos</a>
+                        <a href="#3">Contáctanos</a> 
+                </div>
             
-            <div className='logo2'>
-            <img className='logo-img2' src={Logo}></img>
-            </div>
+                <div className='logo2'>
+                    <img className='logo-img2' src={Logo}></img>
 
-            <div className='logo3'>
-            <img className='logo-img3' src={Logo2}></img>
-            </div>
+                    <a href="#1">Nosotros</a>
+                        <a href="#2">Servicios</a>
+                        <a href="#3">Cursos</a>    
+                        <a href="#2">Productos</a>
+                        <a href="#3">Contáctanos</a> 
+                </div>
 
-            <div className='logo4'>
-            <img className='logo-img4' src={Logo3}></img>
-            </div>
-            </div>
+                <div className='logo3'>
+                    <img className='logo-img3' src={Logo2}></img>
 
+                    <a href="#1">Nosotros</a>
+                        <a href="#2">Servicios</a>
+                        <a href="#3">Cursos</a>    
+                        <a href="#2">Productos</a>
+                        <a href="#3">Contáctanos</a> 
+                </div>
+
+                <div className='logo4'>
+                    <img className='logo-img4' src={Logo3}></img>
+
+                    <a href="#1">Nosotros</a>
+                        <a href="#2">Servicios</a>
+                        <a href="#3">Cursos</a>    
+                        <a href="#2">Productos</a>
+                        <a href="#3">Contáctanos</a> 
+                </div>
+            </div>
+            </nav>
             
             )
     }  
