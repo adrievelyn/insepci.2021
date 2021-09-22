@@ -1,9 +1,8 @@
-name: Deploy 
+name: Deploy of React Project
 on:
   push:
     branches:
       - main
-    pull_request:
       
 jobs:
   deploy:
