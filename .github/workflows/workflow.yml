@@ -25,9 +25,6 @@ jobs:
         cache: 'npm'
       
 
-    - run: npm install
-    - run: git config --global user.email "adrievelyn@gmail.com"
-    - run: git config --global user.name "Adriana Sanchez"
     - run: npm run deploy
   
 
