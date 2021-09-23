@@ -24,9 +24,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
       
-    - run: npm ci
-    - run: npm install
-    - run: npm run build
-    - run: gh-pages -d build
+    - run: npm run deploy
   
 
