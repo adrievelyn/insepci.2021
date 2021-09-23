@@ -2,7 +2,7 @@
   "name": "insepci.2021",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://adrievelyn.github.io/insepci.2021/index.js",
+  "homepage": "https://adrievelyn.github.io/insepci.2021/",
   "dependencies": {
     "@babel/core": "^7.14.8",
     "@testing-library/jest-dom": "5.14.1",
