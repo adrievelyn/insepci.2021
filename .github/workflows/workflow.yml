@@ -1,35 +1,32 @@
-name: Deploy of React Project
+  name: Deploy of React Project
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  on:
+    push:
+      branches: [ main ]
+    pull_request:
+      branches: [ main ]
 
-jobs:
-  build:
-
+  jobs:
+    build:
     runs-on: ubuntu-latest
-
     strategy:
-      matrix:
-        node-version: [12.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    matrix:
+    node-version: [12.x]
 
-    steps:
+  steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+      node-version: ${{ matrix.node-version }}
+      cache: 'npm'
+
+    - name: Install Packages
+      run: npm install
+    - name: Build page 
+      run: npm run build
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with: 
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
-
-    - run: npm install
-    - run: npm run deploy
-  
-
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      publish_dir: ./build
