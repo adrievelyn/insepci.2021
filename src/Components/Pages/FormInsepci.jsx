@@ -24,9 +24,7 @@ class FormInsepci extends React.Component{
                 </label>
                 <button class="form-button" type="submit">ENVIAR MENSAJE</button>
             </form>
-            <a href="mailto:inversiones.s.p.c.i.2021@gmail.com" id='sendMsg'></a>
-
-            </div>
+                        </div>
          
         
        
